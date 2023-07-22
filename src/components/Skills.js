@@ -6,8 +6,8 @@ import { Chart } from "react-google-charts";
   ["Skills", "My Skills"],
   ["HTML", 90],
   ["CSS", 80],
-  ["JavaScript", 78],
-  ["REACT JS", 80],
+  ["JavaScript", 80],
+  ["REACT JS", 78],
   ["Material UI", 80],
 ];
 

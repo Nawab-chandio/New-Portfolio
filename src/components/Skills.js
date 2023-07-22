@@ -13,7 +13,7 @@ import { Chart } from "react-google-charts";
 
 const options = {
   title: "My Skills",
-  backgroundColor: "#445e70", 
+  backgroundColor: "#2c405e", 
   color: "white"
 
 };

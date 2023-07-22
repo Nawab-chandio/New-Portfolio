@@ -9,12 +9,10 @@ const style = {
   padding: "10px",
 };
 
-const list = {
+const Contacts = {
   color: "white",
   fontFamily: "Lexend",
-  fontSize: "16px",
-  padding: "15px",
-  justifyContent: "right",
+  textDecoration: "none",
 };
 
 function Navbar() {
@@ -39,16 +37,26 @@ function Navbar() {
               paddingTop: "10px",
             }}
           >
-            Tel: +92 344 0004181 <br /> Email:{" "}
-            <a href="mailto:nawaab.subhan@gmail.com">nawaab.subhan@gmail.com</a>{" "}
+            Contact No:{" "}
+            <a
+              href="tel:+923440004181"
+              style={Contacts}
+            >
+              +92 344 0004181
+            </a>{" "}
+            <br /> Email:{" "}
+            <a href="mailto:nawaab.subhan@gmail.com" style={Contacts}>
+              nawaab.subhan@gmail.com
+            </a>{" "}
             <br />
             LinkedIn:{" "}
             <a
               href="https://www.linkedin.com/in/nawab-chandio-429958159/"
               target="_blank"
               rel="noopener noreferrer"
+              style={Contacts}
             >
-              https://www.linkedin.com/in/nawab-chandio-429958159/
+              www.linkedin.com/nawab-chandio
             </a>
           </Typography>
         </Grid>

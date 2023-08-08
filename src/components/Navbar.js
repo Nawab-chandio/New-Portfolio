@@ -1,6 +1,8 @@
-import { Button, Grid, Typography } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const style = {
   color: "white",
@@ -31,31 +33,41 @@ function Navbar() {
         <Grid container item xs={7} justifyContent={"right"}>
           <Typography
             style={{
-              color: "skyblue",
-              fontSize: "14px",
+              // color: "skyblue",
+              // fontSize: "14px",
               textAlign: "right",
-              paddingTop: "10px",
+              // paddingTop: "10px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
             }}
           >
-            Contact No:{" "}
+            {/* Contact No: */}
             <a
               href="tel:+923440004181"
-              style={Contacts}
+              style={{ ...Contacts, display: "flex", alignItems: "center" }}
             >
+              <PhoneIphoneIcon style={{ marginRight: "5px" }} />
               +92 344 0004181
-            </a>{" "}
-            <br /> Email:{" "}
-            <a href="mailto:nawaab.subhan@gmail.com" style={Contacts}>
-              nawaab.subhan@gmail.com
-            </a>{" "}
+            </a>
             <br />
-            LinkedIn:{" "}
+            {/* Email: */}
+            <a
+              href="mailto:nawaab.subhan@gmail.com"
+              style={{ ...Contacts, display: "flex", alignItems: "center" }}
+            >
+              <EmailIcon style={{ marginRight: "5px" }} />
+              nawaab.subhan@gmail.com
+            </a>
+            <br />
+            {/* LinkedIn: */}
             <a
               href="https://www.linkedin.com/in/nawab-chandio-429958159/"
               target="_blank"
               rel="noopener noreferrer"
-              style={Contacts}
+              style={{ ...Contacts, display: "flex", alignItems: "center" }}
             >
+              <LinkedInIcon style={{ marginRight: "5px" }} />
               www.linkedin.com/nawab-chandio
             </a>
           </Typography>

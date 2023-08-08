@@ -30,7 +30,7 @@ function MainBody() {
               fontFamily: "lexend",
               padding: "6px",
               fontSize: "20px",
-              "@media (max-width: 600px)": {
+              "@media (maxWidth: 600px)": {
                 fontSize: "14px",
               },
             }}

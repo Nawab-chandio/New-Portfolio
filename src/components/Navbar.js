@@ -19,8 +19,8 @@ const Contacts = {
 
 function Navbar() {
   return (
-    <div style={{ backgroundColor: "#0C1A35" }}>
-      <Grid container className="" spacing={2}>
+    <Grid style={{ backgroundColor: "#0C1A35" }}>
+      <Grid container className="" >
         <Grid item xs={5}>
           <Typography style={style}>
             Nawab Ali | React JS Developer{" "}
@@ -30,37 +30,31 @@ function Navbar() {
           </Typography>
         </Grid>
 
-        <Grid container item xs={7} justifyContent={"right"}>
+        <Grid container item xs={7} justifyContent={"right"} >
           <Typography
             style={{
-              // color: "skyblue",
-              // fontSize: "14px",
               textAlign: "right",
-              // paddingTop: "10px",
-              display: "flex",
               flexDirection: "column",
               alignItems: "flex-end",
+              padding: "5px 5px"
             }}
           >
-            {/* Contact No: */}
             <a
               href="tel:+923440004181"
-              style={{ ...Contacts, display: "flex", alignItems: "center" }}
+              style={{ ...Contacts, display: "flex", paddingBottom: '10px' }}
             >
               <PhoneIphoneIcon style={{ marginRight: "5px" }} />
               +92 344 0004181
             </a>
-            <br />
-            {/* Email: */}
+            {/* <br /> */}
             <a
               href="mailto:nawaab.subhan@gmail.com"
-              style={{ ...Contacts, display: "flex", alignItems: "center" }}
+              style={{ ...Contacts, display: "flex", paddingBottom: '10px' }}
             >
               <EmailIcon style={{ marginRight: "5px" }} />
               nawaab.subhan@gmail.com
             </a>
-            <br />
-            {/* LinkedIn: */}
+            {/* <br /> */}
             <a
               href="https://www.linkedin.com/in/nawab-chandio-429958159/"
               target="_blank"
@@ -73,7 +67,7 @@ function Navbar() {
           </Typography>
         </Grid>
       </Grid>
-    </div>
+    </Grid>
   );
 }
 

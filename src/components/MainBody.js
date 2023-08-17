@@ -4,8 +4,6 @@ import Nawab from "./../pics/Nawab.jpeg";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
-
-
 function MainBody() {
   return (
     <Grid container spacing={2}>
@@ -18,6 +16,7 @@ function MainBody() {
             margin: 1.5,
             backgroundColor: "#2c405e",
             width: "100%",
+            height: 350,
             transition: "box-shadow 0.3s",
             "&:hover": {
               boxShadow: "0px 4px 10px rgba(0,0,0,0.7)",
@@ -25,13 +24,13 @@ function MainBody() {
           }}
         >
           <Typography
-            style={{
+            sx={{
               color: "white",
               fontFamily: "lexend",
               padding: "6px",
-              fontSize: "20px",
-              "@media (maxWidth: 600px)": {
-                fontSize: "14px",
+              fontSize: {
+                xs: "17.5px", // Font size for screens below 600px width
+                sm: "20px", // Font size for screens 600px width and above
               },
             }}
           >
@@ -93,8 +92,8 @@ function MainBody() {
         </Card>
       </Grid>
 
-<Grid container mt={'40px'}>
-      <Projects />
+      <Grid container mt={"40px"}>
+        <Projects />
       </Grid>
     </Grid>
   );
